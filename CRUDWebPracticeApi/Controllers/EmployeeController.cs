@@ -17,7 +17,7 @@ namespace CRUDWebPracticeApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
+        public async Task<ActionResult<List<Employee>>> GetEmployees()
         {
             if(_appDbContext.Employees == null)
             {
